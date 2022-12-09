@@ -8,13 +8,13 @@ let counterValue = Number(document.querySelector('#value').textContent)
 btnDecr.addEventListener('click', minus);
 btnIncr.addEventListener('click', plus);
 
-function minus(evt) {
+function minus() {
     counterValue -= 1
     // console.log(counterValue)
     value.innerHTML = counterValue
 }
 
-function plus(evt) {
+function plus() {
     counterValue += 1
     // console.log(counterValue)
     value.innerHTML = counterValue

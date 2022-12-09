@@ -9,6 +9,14 @@ const ingredients = [
 
 const list = document.querySelector('#ingredients');
 
+for (const ingr of ingredients) {
+  const li = document.createElement('li')
+  li.textContent = ingr
+  li.classList.add('item')
+  
+  list.append(li)
+}
+
 // let markup = ''
 
 // for (const ingr of ingredients) {
@@ -18,10 +26,3 @@ const list = document.querySelector('#ingredients');
 // list.insertAdjacentHTML("beforeend", markup);
 
 
-for (const ingr of ingredients) {
-  const li = document.createElement('li')
-  li.classList.add('item')
-  li.textContent = ingr
-  
-  list.append(li)
-}
