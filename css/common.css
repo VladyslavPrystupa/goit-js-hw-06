@@ -22,3 +22,24 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.gallery{
+  margin: 15px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  max-width: 650px;
+
+
+}
+
+/* .invalid {
+  border-color: #f44336;
+}
+
+.valid {
+  border-color: #4caf50;
+} */
