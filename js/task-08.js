@@ -14,14 +14,13 @@ function validation(evt) {
     elements: { email, password }
   } = evt.currentTarget;
     
-   if (!email.value || !password.value ) {
-    return alert("Всі поля повинні бути заповнені!");
-   } else {
+    if (!email.value || !password.value) {
+       return alert("Всі поля повинні бути заповнені!");
+    }  
     data.email = email.value;
     data.password = password.value
-   }
-    
-    document.querySelector('.js-form').reset();
+   
+    evt.currentTarget.reset();
     return console.log(data)
     
 }
